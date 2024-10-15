@@ -1,0 +1,12 @@
+{
+  "name": "xenia-studio",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon ./app.js"
+  },
+  "keywords": [],
+  "author": "hasanabadi.am1380@gmail.com",
+  "license": "ISC",
+  "description": "Xenia Studio website"
+}
