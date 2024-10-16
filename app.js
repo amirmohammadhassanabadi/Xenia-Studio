@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const path = require("path");
 const config = require("./config")[process.env.NODE_ENV || "development"];
 const logger = config.logger;
 
@@ -8,18 +9,12 @@ const app = express();
 
 // View Engine
 app.set("view engine", "ejs");
-app.set("views",  "./views");
+app.set("views", "./views");
 
-
-// Importing Routers
-const {mainRouter} = require("./routers/main.router");
-
-
-// Using Routers
-app.use("/", mainRouter);
-
+// Routers
+require("./routers/config.router")(app);
 
 // Server Init
 app.listen(config.port, () => {
-    logger.info(`app is running on port ${config}`)
-})
+  logger.info(`app is running on port ${config}`);
+});
