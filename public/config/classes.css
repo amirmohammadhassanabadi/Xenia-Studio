@@ -1,0 +1,11 @@
+.dis-none{
+    display: none;
+}
+
+.dis-flex{
+    display: flex;
+}
+
+.dis-block{
+    display: block;
+}
