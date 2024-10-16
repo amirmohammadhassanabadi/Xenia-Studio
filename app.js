@@ -11,10 +11,13 @@ const app = express();
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
+// Public Route
+app.use("/public", express.static(path.join(__dirname, "public")));
+
 // Routers
 require("./routers/config.router")(app);
 
 // Server Init
 app.listen(config.port, () => {
-  logger.info(`app is running on port ${config}`);
+  logger.info(`app is running on port ${config.port}`);
 });
