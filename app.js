@@ -6,6 +6,11 @@ const logger = config.logger;
 // creating App
 const app = express();
 
+// View Engine
+app.set("view engine", "ejs");
+app.set("views",  "./views");
+
+
 // Importing Routers
 const {mainRouter} = require("./routers/main.router");
 
