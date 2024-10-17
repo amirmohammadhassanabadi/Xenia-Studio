@@ -1,0 +1,30 @@
+body{
+    background-color: var(--page-bg);
+}
+
+.logo-wrapper{
+    width: 5%;
+    margin: 1rem auto;
+}
+
+.logo-wrapper > img{
+    width: 100%;
+}
+
+.banner{
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.banner > img{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+h1 > span {
+    background-color: var(--logo-green);
+    padding: .3rem .5rem;
+}
