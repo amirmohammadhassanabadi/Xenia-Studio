@@ -1,0 +1,14 @@
+@font-face {
+    font-family: IranSans;
+    src: url("/public/package/fonts/IranSans/IRANSansXFaNum-Regular.woff");
+}
+
+@font-face {
+    font-family: IranSansBold;
+    src: url("/public/package/fonts/IranSans/IRANSansXFaNum-Bold.woff");
+}
+
+@font-face {
+    font-family: Varino;
+    src: url("/public/package/fonts/varino/Varino\ -\ Normal.ttf");
+}
